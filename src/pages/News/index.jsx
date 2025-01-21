@@ -5,7 +5,7 @@ import './style.css'
 import { CiCalendarDate } from "react-icons/ci";
 
 
-import FotoNoticia1 from '../../assets/FotoNoticia1.png'
+// import FotoNoticia1 from '../../assets/FotoNoticia1.png'
 import FotoNoticia2 from '../../assets/FotoNoticia2.png'
 
 export default function News() {
@@ -15,7 +15,7 @@ export default function News() {
             id: 1,
             titulo: 'Viação praia sol recebe as suas primeiras unidades do novo mascarello granvia 2024',
             dataPublicacao: '15 de novembro de 2023',
-            urlImagem: FotoNoticia1
+            urlImagem: FotoNoticia2
         },
         {
             id: 2,
