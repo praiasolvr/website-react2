@@ -36,7 +36,7 @@ const Carousel = ({ slides }) => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index} className="carousel-slide">
             <div className="image-container">
-                <Link to={`/news/${index}`} >
+              <Link to={`/news/${index}`} >
                 <img src={slide.image} alt={`Slide ${index + 1}`} className="carousel-image" />
                 <div className="carousel-text">
                   <h3>{slide.title}</h3>

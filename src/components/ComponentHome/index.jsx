@@ -5,22 +5,22 @@ import Carousel from '../Carousel/index.jsx'
 export default function ComponentHome() {
     const data = [
         {
-            image: "../src/assets/fotomascarelofrente1080.jpg",
+            image: "../../assets/fotomascarelofrente1080.jpg",
             title: "Bem-vindo ao Nosso Sistema",
             description: "A solução completa para transporte e inovação.",
         },
         {
-            image: "../src/assets/fotocontact.png",
+            image: "../../assets/fotocontact.png",
             title: "Notícias Recentes",
             description: "Fique por dentro das vagas disponiveis.",
         },
         {
-            image: "../src/assets/foto-equipe-parceiros.jpg",
+            image: "../../assets/foto-equipe-parceiros.jpg",
             title: "Equipe Dedicada",
             description: "Conheça nossa equipe e parceiros de sucesso.",
         },
         {
-            image: "../src/assets/foto-internabus1080.jpg",
+            image: "../../assets/foto-internabus1080.jpg",
             title: "Inovação em Movimento",
             description: "Transformando o transporte para um futuro melhor.",
         },
