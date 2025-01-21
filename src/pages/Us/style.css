@@ -1,0 +1,47 @@
+
+
+.container{
+    margin: 30px;
+}
+
+.container-empresa{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1300px) {
+    .container-empresa{
+        flex-direction: column;
+    }
+    .container-empresa p{
+        width: 100%;;
+    }
+}
+
+.containerQuemSomos{
+    margin-top: 40px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.containerQuemSomos img{
+    max-width: 1300px;
+    width: 98%;
+
+}
+
+#texto-sobre-viacao-praia-sol{
+    text-align: justify;
+    width: 98%;
+
+    /* margin-left: 30px;
+    margin-right: 20px;
+    width: 500px;
+    text-align: justify; */
+}

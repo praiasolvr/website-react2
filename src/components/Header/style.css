@@ -1,0 +1,301 @@
+header {
+    background-color: #FFFAFA;
+    height: auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: fixed; */
+    /* padding: auto 0; */
+    /* Adiciona espaçamento interno */
+    /* Evita rolagem horizontal desnecessária */
+}
+
+/* FAIXA TOPO */
+
+.faixa-topo-fixa {
+    width: 100%;
+    height: 60px;
+    /* TODO: usar posição relativa */
+    background-color: #075AA9;
+    display: flex;
+    justify-content: end;
+}
+
+.iconLogin {
+    width: 45px;
+    height: 45px;
+}
+
+.menu-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.loginbutton {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-faixa-topo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FINAL FAIXA TOPO */
+
+.titulo {
+    color: #075AA9;
+}
+
+#titulo-empresa {
+    color: #075AA9;
+    font-size: 30px;
+    white-space: nowrap;
+    /* Evita quebra de linha no texto */
+}
+
+
+/* RESPONSIVO MOBILE INICIO */
+.display-desktop {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* Impede quebra para linhas adicionais */
+    gap: 20px;
+    /* Espaçamento uniforme entre elementos */
+}
+
+.display-mobile {
+    display: none;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.display-mobile:hover {
+    background-color: rgba(221, 236, 251, 0.763);
+}
+
+.display-mobile svg {
+    width: 45px;
+    height: 35px;
+}
+
+@media (max-width: 1270px) {
+    .display-mobile {
+        display: flex;
+    }
+
+    .display-desktop .lista-menu {
+        display: none;
+    }
+
+    .search-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 568px) {
+    #titulo-empresa {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    #imgLogo {
+        width: 20%;
+        height: 20%;
+    }
+}
+
+
+
+/* RESPONSIVO MOBILE FINAL */
+.lista-menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.lista-menu .item-lista-menu {
+    font-size: 15px;
+    padding: 0 5px;
+    flex-shrink: 0;
+    /* Impede que o item diminua */
+}
+
+.lista-menu .item-lista-menu a {
+    color: #075AA9;
+    text-decoration: none;
+}
+
+.lista-menu .item-lista-menu:hover {
+    transform: scale(1.20);
+    transition: .2s;
+}
+
+/* BARRA DE PESQUISA INICIO*/
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    /* display: none; Esconde a lupa em telas maiores */
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .search-bar-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+/* BARRA DE PESQUISA FINAL*/
+
+/* BOTÃO DE MENU ACESSIBILIDADE */
+
+.iconAccessibility {
+    margin-left: 15px;
+    font-size: 2em;
+    /* Reduz o tamanho do ícone */
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s;
+}
+
+.iconAccessibility:hover {
+    transform: scale(1.1);
+    color: #0056b3;
+}
+
+.iconAccessibility:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.dropdown-accessibility {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Posiciona o menu acima do botão */
+    right: 0;
+    /* Alinha o menu ao lado direito do botão */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* z-index: 1; Garante que o menu fique por cima */
+    padding: 10px;
+
+}
+
+.dropdown-accessibility:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-menu button:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu svg {
+    width: 20px;
+    height: 20px;
+}
+
+.dark-mode-toggle {
+    display: flex;
+    /* Alinha os itens em uma linha */
+    align-items: center;
+    /* Centraliza o ícone e o texto verticalmente */
+    background-color: transparent;
+    /* Fundo transparente */
+    color: inherit;
+    /* Herda a cor do texto */
+    cursor: pointer;
+    /* Mostra cursor de botão */
+}
+
+/* BARRA DE PESAQUISA - PESQUISAR INFORMAÇÕES DO SITE */
+
+.search-results {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 5px;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  
+  .search-results a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .search-results a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .search-results p {
+    padding: 10px;
+    color: gray;
+  }
+  

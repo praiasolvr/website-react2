@@ -1,0 +1,37 @@
+/*p{
+    margin: 30px;
+    font-family: "Inter", sans-serif;
+    font-style: italic;
+}
+*/    
+
+
+.container{
+    max-width: 1300px;
+    width: 98%;
+    
+}
+
+
+.containerTrabalheConosco{
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+    
+
+}
+
+.containerTrabalheConosco strong{
+    padding: 8px;
+}
+
+
+
+.containerTrabalheConosco > img{
+    max-width: 1600px;
+    width: 100%;
+    
+    /* height: max-content;
+    width: 100%; */
+    /* margin: 3px 3px 3px 250px; */
+}

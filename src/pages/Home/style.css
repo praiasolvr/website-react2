@@ -1,0 +1,55 @@
+.container-home {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.title-happy-new-year {
+    font-weight: 900;
+}
+
+.foto {
+    margin-right: 30px;
+    height: max-content;
+}
+
+.foto img {
+    width: 350px;
+}
+
+.foto p {
+    text-align: justify;
+}
+
+.conteudo {
+    margin: 8px 150px 8px 8px;
+}
+
+.conteudo img {
+    margin-top: 15px;
+    height: 50px;
+}
+
+.conteudo p {
+    text-align: justify;
+    width: 100%;
+}
+
+.baloes {
+    position: absolute;
+    width: 150px;
+    right: 0;
+    animation: balancar 3s ease-in-out infinite alternate;
+
+}
+
+@keyframes balancar {
+    0% {
+        top: 100px;
+    }
+
+    100% {
+        top: 250px;
+    }
+}
