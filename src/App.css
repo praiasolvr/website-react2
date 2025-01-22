@@ -56,10 +56,10 @@ body.dark-mode {
 body.dark-mode header {
   background-color: #1e1e1e; /* Fundo do cabeçalho */
   color: #ffffff; /* Cor do texto no cabeçalho */
-}
+} 
 
 body.dark-mode header a {
-  color: #4fc3f7; /* Cor dos links no cabeçalho */
+  color: #4fc3f7; /* Cor dos links no cabeçalho  */
 }
 
 body.dark-mode header .lista-menu .item-lista-menu a:hover {
