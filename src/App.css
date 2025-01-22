@@ -17,3 +17,65 @@ body {
   flex-direction: column;
 
 }
+
+.header-fixed {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.pages {
+  margin-top: 210px;
+}
+
+.titulo {
+  /* font-size: 1.4rem; */
+  margin: 30px;
+  font-style: italic;
+}
+
+
+.subtitulo {
+  margin-left: 40px;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Estilo global para o modo escuro */
+body.dark-mode {
+  background-color: #121212; /* Fundo global */
+  color: #ffffff; /* Cor do texto */
+}
+
+/* Estilos específicos do cabeçalho no modo escuro */
+body.dark-mode header {
+  background-color: #1e1e1e; /* Fundo do cabeçalho */
+  color: #ffffff; /* Cor do texto no cabeçalho */
+}
+
+body.dark-mode header a {
+  color: #4fc3f7; /* Cor dos links no cabeçalho */
+}
+
+body.dark-mode header .lista-menu .item-lista-menu a:hover {
+  color: #81d4fa; /* Cor de hover para os links */
+}
+
+
+body.dark-mode header .dropdown-menu {
+  background-color: #1e1e1e; /* Fundo do dropdown */
+  border-color: #333333; /* Borda do dropdown */
+}
+
+body.dark-mode header .dropdown-menu button {
+  color: #ffffff; /* Texto dos botões no dropdown */
+}
+
+body.dark-mode header .dropdown-menu button:hover {
+  background-color: #333333; /* Fundo dos botões ao passar o mouse */
+}
