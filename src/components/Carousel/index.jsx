@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-const miliSegundos = 80000
+const miliSegundos = 8000
 
 const Carousel = ({ slides }) => {
 
